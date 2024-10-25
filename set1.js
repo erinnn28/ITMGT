@@ -39,7 +39,12 @@ function savings(grossPay, taxRate, expenses) {
  * @returns {string} The amount of remaining material expressed with its unit (e.g., "10kg")
  */
 function materialWaste(totalMaterial, materialUnits, numJobs, jobConsumption) {
-    // Write your code here
+    let materialConsumed = numJobs * jobConsumption;
+    let waste = totalMaterial - materialConsumed;
+    let num = waste;
+    let unit = materialUnits;
+    let materialWaste = waste + materialUnits;
+    return (materialWaste)
 }
 
 /**
