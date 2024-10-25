@@ -17,7 +17,9 @@
  * @returns {Number} The number of centavos remaining from an employee's pay after taxes and expenses
  */
 function savings(grossPay, taxRate, expenses) {
-    // Write your code here
+    let tax = grossPay * taxRate;
+    let takeHomePay = grossPay - tax - expenses;
+    return Math.floor (takeHomePay)
 }
 
 /**
