@@ -56,5 +56,8 @@ function materialWaste(totalMaterial, materialUnits, numJobs, jobConsumption) {
  * @returns {Number} The final value of the investment
  */
 function interest(principal, rate, periods) {
-    // Write your code here
+    let sampleinterest = principal * (rate * periods);
+    let investment = sampleinterest + principal
+    return Math.floor (investment)
 }
+
