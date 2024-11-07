@@ -120,7 +120,7 @@ function ticTacToe(board) {
 function eta(firstStop, secondStop, routeMap) {
     let travelTime = 0;
     let currentStop = firstStop;
-    while (currentstop !== secondStop) {
+    while (currentStop !== secondStop) {
         const nextLeg = Object.keys(routeMap).find(leg => leg.startsWith(currentStop + ','));
         const nextStop = nextLeg.split(',')[1];
         travelTime += routeMap[nextLeg].travel_time_mins;
